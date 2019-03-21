@@ -15,7 +15,7 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/Styles.css">
+    <link rel="stylesheet" type="text/css" href="css/hapocv.css">
     <link rel="stylesheet" type="text/css" href="css/Styles-mobile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
@@ -29,19 +29,16 @@
                     <li><a href="#">English</a></li>
                     <li><a href="#">Japanese</a></li>
                 </ul>
-                <div class="header-left position-relative col-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start align-items-md-end mb-0 mb-md-5">
+                <div class="header-left position-relative overflow-hidden col-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start align-items-md-end pb-0 pb-md-5">
                     <div class="header-left-text">
-                        <!-- <div class="avatar-mini d-none">
-                            <img class="d-md-none" src="images/Rectangle.png" alt="">
-                            <a class="icon-avatar position-absolute" class="avatar-camera-right" href="#" title="avarta">
-                                <i class="fas fa-camera"></i>
-                            </a>
-                        </div> -->
-                        <h2 class="mb-0 pl-0">BUMBLEBEE WALKER</h2>
+                        <h2 class="mb-0 pl-0" contenteditable="true">BUMBLEBEE WALKER</h2>
                         <span>Ruby on Rail Developer</span>
                     </div>
+                    <label class="icon-camera">
+                        <input type="file" name="file" class="d-none" />
+                        <i class="fas fa-camera"></i>
+                    </label>
                 </div>
-
                 <div class="header-right col-12 col-sm-12 col-md-5 offset-md-1">
                     <div class="menu">
                         <ul class="d-none d-md-block">
@@ -51,60 +48,60 @@
 
                         <div class="avatar-mini">
                             <img class="mx-auto" src="images/Rectangle.png" alt="">
-                             <a class="mx-auto icon-avatar position-absolute" class="avatar-camera-right" href="#" title="avarta">
+                            <a class="mx-auto icon-avatar position-absolute" class="avatar-camera-right" href="#" title="avarta">
                                 <i class="fas fa-camera"></i>
                             </a>
                         </div>
                     </div>
                     <div class="title">
-                        <p class="bumble p-0 m-0 font-weight-bold">BUMBLEBEE WALKER</p>
-                        <p class="date-time p-0 ">25/12/1992</p>
+                        <p class="bumble p-0 m-0 font-weight-bold" contenteditable="true">BUMBLEBEE WALKER</p>
+                        <p class="date-time p-0" contenteditable="true">25/12/1992</p>
                     </div>
                     <div class="infor-table">
                         <table>
                             <tbody>
                                 <tr>
                                     <td>Phone:</td>
-                                    <td>0123456789</td>
+                                    <td contenteditable="true">0123456789</td>
                                 </tr>
                                 <tr>
                                     <td>Email:</td>
-                                    <td>bumblebee@gmail.com</td>
+                                    <td contenteditable="true">bumblebee@gmail.com</td>
                                 </tr>
                                 <tr>
                                     <td>Facebook:</td>
-                                    <td>bumblebee</td>
+                                    <td contenteditable="true">bumblebee</td>
                                 </tr>
                                 <tr>
                                     <td>Skype:</td>
-                                    <td>bumblebee</td>
+                                    <td contenteditable="true">bumblebee</td>
                                 </tr>
                                 <tr>
                                     <td>Chatwork:</td>
-                                    <td>bumblebee</td>
+                                    <td contenteditable="true">bumblebee</td>
                                 </tr>
                                 <tr>
                                     <td>Address:</td>
-                                    <td>58 Tran Binh - Mai Dich - Cau Giay - Ha Noi</td>
+                                    <td contenteditable="true">58 Tran Binh - Mai Dich - Cau Giay - Ha Noi</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="btn-profile">
-                       <button class="btn-edit-profile" type="submit"><a href="#">Edit Profile <i class="fas fa-pen"></i></a>
-                       </button>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
+                    <div class="btn-profile text-center">
+                     <button class="btn-edit-profile" type="submit"><a href="#">Edit Profile <i class="fas fa-pen"></i></a>
+                     </button>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
 
-   <div class="container-fluid profestinal-sumary">
+ <div class="container-fluid profestinal-sumary">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>PROFESSIONAL SUMMARY</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <h1 contenteditable="true">PROFESSIONAL SUMMARY</h1>
+                <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -123,7 +120,6 @@
                     </button>
                 </div>  
                 <div class="clear">
-
                 </div>
             </div>
         </div>
@@ -134,14 +130,14 @@
     <div class="container">
         <div class="row">
             <div class="skills-left col-12 col-sm-12 col-md-6">
-                <h1>PROFESSIONAL SKILLS</h1>
-                <p>
+                <h1 contenteditable="true">PROFESSIONAL SKILLS</h1>
+                <p contenteditable="true">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip
                 </p>
                 <div class="row">
-                    <div class="col-6 col-sm-6 col-md-4" style="" data-percentage="50">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -149,11 +145,11 @@
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number">75%</span><br>
+                            <span class="span-white-per-number" contenteditable="true">75%</span><br>
                         </svg>
-                        <span class="span-white-per-text p-0 m-0">HTML/CSS</span>
+                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4" style="" data-percentage="50">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -161,11 +157,11 @@
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">75%</span>
                         </svg>
-                        <span class="span-white-per-text p-0 m-0">HTML/CSS</span>
+                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4" style="" data-percentage="50">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -173,11 +169,11 @@
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                             <span class="span-white-per-number">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">75%</span>
                         </svg>
-                        <span class="span-white-per-text p-0 m-0">HTML/CSS</span>
+                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4" style="" data-percentage="50">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -185,11 +181,11 @@
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">75%</span>
                         </svg>
-                        <span class="span-white-per-text p-0 m-0">HTML/CSS</span>
+                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 position-relative" style="" data-percentage="50">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 position-relative" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -197,47 +193,48 @@
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">75%</span>
                         </svg>
-                        <span class="span-white-per-text p-0 m-0">HTML/CSS</span>
+                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-md-4 btn-chart" style="">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 btn-chart" style="">
                         <button class="btn-add-chart">Add Skills <i class="fas fa-plus"></i></button>
                     </div>
                 </div>
             </div>
             <div class="skills-right col-12 col-sm-12 col-md-6">
-                <h1>PROFESTINAL SUMAMRY</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <h1 class="pt-5 pt-md-0 pt-lg-0" contenteditable="true">PROFESTINAL SUMAMRY</h1>
+                <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip
                 </p>
-                <div class="team-chart mx-1 mr-md-4 ml-md-4 row">
+                <div class="team-chart mx-1 mr-md-4 ml-md-4 row" contenteditable="true">
                     TEAM WORD
-                    <span class="team-chart-span mt-3">60%</span>
                     <div class="col-md-12 team-chart-div mt-4">
-                        <div class="col-md-12 team-chart-one">
+                        <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
+                            <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
                         </div>
                     </div>
                 </div>
-                <div class="team-chart mx-1 mt-3 mr-md-4 ml-md-4 row">
+                <div class="team-chart mx-1 mt-3 mr-md-4 ml-md-4 row" contenteditable="true">
                     TEAM WORD
-                    <span class="team-chart-span mt-3">60%</span>
+                    
                     <div class="col-md-12 team-chart-div mt-4">
-                        <div class="col-md-12 team-chart-one">
+                        <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
+                            <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
                         </div>
                     </div>
                 </div>
-                <div class="team-chart mx-1 mt-3 mr-md-4 ml-md-4 row">
+                <div class="team-chart mx-1 mt-3 mr-md-4 ml-md-4 row" contenteditable="true">
                     TEAM WORD
-                    <span class="team-chart-span mt-3">60%</span>
                     <div class="col-md-12 team-chart-div mt-4">
-                        <div class="col-md-12 team-chart-one">
+                        <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
+                            <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
                         </div>
                     </div>
                 </div>
                 <div class="team-chart mt-3 ml-0 mr-md-4 ml-md-4 row">
-                    <div class="btn-sumary col-md-12 mt-4 pr-0">
+                    <div class="btn-sumary col-md-12 text-right mt-4 pr-0">
                         <button class="btn-edit-sumary" type="submit">Add Skills 
                             <i class="fas fa-plus"></i>
                         </button>
@@ -255,66 +252,66 @@
     <div class="container work-experience-margin">
         <div class="left row">
             <div class="col-md-6">
-                <h1 class="white-line">WORK EXPERIENCE</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                <h1 class="white-line" contenteditable="true" >WORK EXPERIENCE</h1>
+                <p contenteditable="true">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 <div class="box">
-                    <div class="item-one p-2 border mb-4 border-white mr-3">
+                    <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                         <h4>(2010 - 2019) ABC COMPANY</h4>
                         <p class="p-0 m-1">Developer</p>
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div>
-                    <div class="item-one p-2 mb-4 border border-white mr-3">
+                    <div contenteditable="true" class="item-one p-2 mb-4 border border-white mr-0 mr-md-3 mr-lg-3">
                         <h4>(2010 - 2019) ABC COMPANY</h4>
                         <p class="p-0 m-1">Developer</p>
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div>
-                    <div class="item-one p-2 mb-4 border border-white mr-3">
+                    <div contenteditable="true" class="item-one p-2 mb-4 border border-white mr-0 mr-md-3 mr-lg-3">
                         <h4>(2010 - 2019) ABC COMPANY</h4>
                         <p class="p-0 m-1">Developer</p>
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div>
                 </div>
                 <div class="btn-experince text-md-right text-center mr-md-4">
-                 <button class="btn-add-experince" type="submit">
-                     <a class="text-white" href="#">Add Experince <i class="fas fa-plus"></i>
-                     </a>
-                 </button>
-             </div>
-         </div>
-         <div class="col-md-6">
-            <h1 class="white-line">WORK EXPERIENCE</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                   <button class="btn-add-experince" type="submit">
+                       <a class="text-white" href="#">Add Experince <i class="fas fa-plus"></i>
+                       </a>
+                   </button>
+               </div>
+           </div>
+           <div class="col-md-6">
+            <h1 class="white-line" contenteditable="true">WORK EXPERIENCE</h1>
+            <p contenteditable="true">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
             <div class="box">
-                <div class="item-one p-2 border mb-4 border-white mr-3">
+                <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                     <h4>(2010 - 2019) ABC COMPANY</h4>
                     <p class="p-0 m-1">Developer</p>
                     <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                 </div>
-                <div class="item-one p-2 mb-4 border border-white mr-3">
+                <div contenteditable="true" class="item-one p-2 mb-4 border border-white mr-0 mr-md-3 mr-lg-3">
                     <h4>(2010 - 2019) ABC COMPANY</h4>
                     <p class="p-0 m-1">Developer</p>
                     <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                 </div>
-                <div class="item-one p-2 mb-4 border border-white mr-3">
+                <div contenteditable="true" class="item-one p-2 mb-4 border border-white mr-0 mr-md-3 mr-lg-3">
                     <h4>(2010 - 2019) ABC COMPANY</h4>
                     <p class="p-0 m-1">Developer</p>
                     <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                 </div>
             </div>
             <div class="btn-experince-two text-md-right text-center mr-md-4">
-             <button class="btn-add-experince mt-0" type="submit">
-                 <a class="text-white" href="#">Add Experince <i class="fas fa-plus"></i>
-                 </a>
-             </button>
-         </div>
-     </div>
- </div>
+               <button class="btn-add-experince mt-0" type="submit">
+                   <a class="text-white" href="#">Add Experince <i class="fas fa-plus"></i>
+                   </a>
+               </button>
+           </div>
+       </div>
+   </div>
 </div>
 </div>
 
 <div class="container-fluid portfolio">
     <div class="container">
-        <h1>WORD PORTFOLIO</h1>
+        <h1 contenteditable="true">WORD PORTFOLIO</h1>
         <div class="menu-portfolio mt-4 col-md-12">
             <ul>
                 <li><a href="#">ALL</a></li>
@@ -385,7 +382,7 @@
                     <img src="images/project.jpg" style="width: 88px;">
                 </div>
                 <div style="height:218px;background-color:#EF5B5B" class="cv-center">
-                    <img src="images/project.jpg" style="width: 119px;">
+                    <img src="images/project-black.jpg" style="width: 119px;">
                 </div>
                 <div style="height:109px;background-color:#333333" class="cv-center">
                     <img src="images/project.jpg" style="width: 88px;">
@@ -400,7 +397,7 @@
                     <div style="height:109px;background-color:#333333" class="cv-center">
                         <img src="images/project.jpg" style="width: 88px;">
                     </div><div style="height:109px;background-color:#F9BC2D" class="cv-center">
-                    <img src="images/project-black.jpg" style="width: 88px;">
+                    <img src="images/project.jpg" style="width: 88px;">
                 </div>
                 <div style="height:109px;background-color:#F64C71" class="cv-center">
                     <img src="images/project.jpg" style="width: 88px;">
@@ -420,14 +417,14 @@
 <!-- -->
 <div class="container-fluid references">
     <div class="container">
-        <h1 class="mb-5">REFERENCES RENCES</h1>
+        <h1 class="mb-5" contenteditable="true">REFERENCES RENCES</h1>
         <div id="truong" class="owl-carousel owl-theme">
             <div class="slide item row">
                 <div class="slide-img col-md-3 d-flex justify-content-center">
                     <img class="" src="images/avatar-ref.jpg" alt="">
                 </div>
                 <div class="slide-text col-md-9 position-relative ">
-                    <p><span class="slide-sapn slide-sapn-one position-absolute">“</span>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <p contenteditable="true"><span class="slide-sapn slide-sapn-one position-absolute">“</span>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -437,7 +434,7 @@
                 </div>
             </div>
             <div class="slide item row">
-                <div class="slide-img col-md-3 d-flex">
+                <div class="slide-img col-md-3 d-flex justify-content-center">
                     <img class="" src="images/avatar-ref.jpg" alt="">
                 </div>
                 <div class="slide-text col-md-9 position-relative ">
@@ -451,10 +448,10 @@
                 </div>
             </div>
             <div class="slide item row">
-                <div class="slide-img col-md-3 d-flex">
+                <div class="slide-img col-12 col-sm-12 col-md-3 col-lg-3 position-relative d-flex">
                     <img class="" src="images/avatar-ref.jpg" alt="">
                 </div>
-                <div class="slide-text col-md-9 position-relative ">
+                <div class="slide-text col-12 col-sm-12 col-md-9 col-lg-9 position-relative ">
                     <p><span class="slide-sapn slide-sapn-one position-absolute">“</span>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
