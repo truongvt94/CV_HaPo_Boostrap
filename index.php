@@ -56,6 +56,7 @@
                     <div class="title">
                         <p class="bumble p-0 m-0 font-weight-bold" contenteditable="true">BUMBLEBEE WALKER</p>
                         <p class="date-time p-0" contenteditable="true">25/12/1992</p>
+                        <p class="line"></p>
                     </div>
                     <div class="infor-table">
                         <table>
@@ -115,7 +116,7 @@
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <div class="btn-sumary text-right">
-                    <button class="btn-edit-sumary " type="submit">Edit Summary 
+                    <button class="btn-edi-sumary" type="submit">Edit Summary 
                         <i class="fas fa-pen"></i>
                     </button>
                 </div>  
@@ -136,7 +137,7 @@
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip
                 </p>
-                <div class="row">
+                <div class="row chart-icon">
                     <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
@@ -152,28 +153,29 @@
                     <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
-                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
+                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="65,100" cx="16.9" cy="16.9" r="15.9">
                             </circle>
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number" contenteditable="true">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">65%</span>
                         </svg>
                         <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
                     <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
-                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
+                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="50,100" cx="16.9" cy="16.9" r="15.9">
                             </circle>
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number" contenteditable="true">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">50%</span>
                         </svg>
                         <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
+                    
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 position-relative" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -188,27 +190,28 @@
                     <div class="col-6 col-sm-4 col-md-6 col-lg-4 position-relative" style="" data-percentage="50">
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
-                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
+                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="65,100" cx="16.9" cy="16.9" r="15.9">
                             </circle>
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number" contenteditable="true">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">65%</span>
                         </svg>
                         <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
                     <div class="col-6 col-sm-4 col-md-6 col-lg-4 btn-chart" style="">
-                        <button class="btn-add-chart">Add Skills <i class="fas fa-plus"></i></button>
-                    </div>
+                    <button class="btn-add-chart">Add Skills <i class="fas fa-plus"></i></button>
                 </div>
+                </div>
+                
             </div>
             <div class="skills-right col-12 col-sm-12 col-md-6">
-                <h1 class="pt-5 pt-md-0 pt-lg-0" contenteditable="true">PROFESTINAL SUMAMRY</h1>
+                <h1 class="pt-5 pt-md-0 pt-lg-0" contenteditable="true">PERSONAL SKILLS</h1>
                 <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip
                 </p>
-                <div class="team-chart mx-1 mr-md-4 ml-md-4 row" contenteditable="true">
+                <!-- <div class="team-chart mx-1 mr-md-4 ml-md-4 row" contenteditable="true">
                     TEAM WORD
                     <div class="col-md-12 team-chart-div mt-4">
                         <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
@@ -218,7 +221,6 @@
                 </div>
                 <div class="team-chart mx-1 mt-3 mr-md-4 ml-md-4 row" contenteditable="true">
                     TEAM WORD
-                    
                     <div class="col-md-12 team-chart-div mt-4">
                         <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
                             <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
@@ -232,8 +234,8 @@
                             <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
                         </div>
                     </div>
-                </div>
-                <div class="team-chart mt-3 ml-0 mr-md-4 ml-md-4 row">
+                </div> -->
+                <div class="team-chart ml-0 mr-md-4 ml-md-4 row">
                     <div class="btn-sumary col-md-12 text-right mt-4 pr-0">
                         <button class="btn-edit-sumary" type="submit">Add Skills 
                             <i class="fas fa-plus"></i>
@@ -251,38 +253,42 @@
 <div class="container-fluid work-experience">
     <div class="container work-experience-margin">
         <div class="left row">
-            <div class="col-md-6">
+            <div class="col-md-6 full-item">
                 <h1 class="white-line" contenteditable="true" >WORK EXPERIENCE</h1>
                 <p contenteditable="true">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 <div class="box">
+                    <!-- <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
+                        <h4>(2010 - 2019) ABC COMPANY</h4>
+                        <p class="p-0 m-1">Developer</p>
+                        <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
                     <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                         <h4>(2010 - 2019) ABC COMPANY</h4>
                         <p class="p-0 m-1">Developer</p>
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div>
-                    <div contenteditable="true" class="item-one p-2 mb-4 border border-white mr-0 mr-md-3 mr-lg-3">
+                    <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                         <h4>(2010 - 2019) ABC COMPANY</h4>
                         <p class="p-0 m-1">Developer</p>
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div>
-                    <div contenteditable="true" class="item-one p-2 mb-4 border border-white mr-0 mr-md-3 mr-lg-3">
+                    <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                         <h4>(2010 - 2019) ABC COMPANY</h4>
                         <p class="p-0 m-1">Developer</p>
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="btn-experince text-md-right text-center mr-md-4">
                    <button class="btn-add-experince" type="submit">
-                       <a class="text-white" href="#">Add Experince <i class="fas fa-plus"></i>
-                       </a>
+                       Add Experince <i class="fas fa-plus"></i>
                    </button>
                </div>
            </div>
            <div class="col-md-6">
-            <h1 class="white-line" contenteditable="true">WORK EXPERIENCE</h1>
+            <h1 class="white-line" contenteditable="true">WORK EDUCATION</h1>
             <p contenteditable="true">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
             <div class="box">
-                <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
+                <!-- <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                     <h4>(2010 - 2019) ABC COMPANY</h4>
                     <p class="p-0 m-1">Developer</p>
                     <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
@@ -296,12 +302,11 @@
                     <h4>(2010 - 2019) ABC COMPANY</h4>
                     <p class="p-0 m-1">Developer</p>
                     <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-                </div>
+                </div> -->
             </div>
             <div class="btn-experince-two text-md-right text-center mr-md-4">
                <button class="btn-add-experince mt-0" type="submit">
-                   <a class="text-white" href="#">Add Experince <i class="fas fa-plus"></i>
-                   </a>
+                   Add Experince <i class="fas fa-plus"></i>
                </button>
            </div>
        </div>
@@ -323,44 +328,21 @@
         </div>
 
         <div class="d-none d-flex w-100 flex-wrap portfolio-pc">
-            <div class="w-25" class="project-one">
-                <div class="cv-center project-ni project-img-one">
-                    <img src="images/project.jpg">
-                </div>
-                <div class="cv-center project-ni project-img-two">
-                    <img src="images/project.jpg">
-                </div>
-                <div class="cv-center project-ni project-img-three">
-                    <img src="images/project.jpg">
-                </div>
+            <div class="w-25 project-one">
+                
             </div>
 
-            <div class="w-25" class="project-two">
-                <div class="cv-center project-img-for project-san">
-                    <img src="images/project-black.jpg" style="width: 220px;">
-                </div>
-                <div class="cv-center project-ni project-img-five">
-                    <img src="images/project.jpg">
-                </div>
+            <div class="w-25 project-two">
+                
             </div>
 
-            <div class="w-25" class="project-three">
-                <div class="cv-center project-ni project-img-six">
-                    <img src="images/project.jpg">
-                </div>
-                <div class="cv-center project-san project-img-seven">
-                    <img src="images/project-black.jpg" style="width: 220px;">
-                </div>
+            <div class="w-25 project-three">
+                
             </div>
 
             <div class="w-25">
                 <div class="project-for">
-                    <div class="cv-center project-ni project-img-eight">
-                        <img src="images/project.jpg">
-                    </div>
-                    <div class="cv-center project-ni project-img-night">
-                        <img src="images/project.jpg">
-                    </div>
+                    
                 </div>
                 <div class="btn-project project-ni w-100 cv-center">
                     <button class="btn-add-project" class="cv-btn align-middle">Add Project
@@ -472,6 +454,7 @@
 <div class="container-fluid footer">
     <p>2019 Flatos.com All right reserved</p>
 </div>
+
 <script type="text/javascript" >
     $('#truong').owlCarousel({
         autoplayTimeout: 5000,
@@ -487,6 +470,129 @@
         }
     });
 </script>
+
+<script type="text/javascript">
+    var skpc = ["65%","65%","65%"];
+    var skn = ["TEAMWORK","ENGLISH","JAPANESE"];
+    for(a = 0;a < skpc.length ;a++) {
+        let skilladd = '<div class="team-chart mx-1 mr-md-4 ml-md-4 row">'+skn[a]+'<br><div class="col-md-12 team-chart-div mt-4"><div class="col-md-12 p-0 d-flex justify-content-end team-chart-one style="width:'+skpc[a]+'"><span class="team-chart-span mt-3 ">'+skpc[a]+'</span></div> </div> </div><br>';
+        $(".btn-edit-sumary").parents('.team-chart').before(skilladd);
+    }
+
+    $(".btn-edit-sumary").click(function() {
+        skpc.push("65%");
+        skn.push("PERSONAL SKILL NAME");
+        var skilladd = '<div class="team-chart mx-1 mr-md-4 ml-md-4 row">'+skn[a]+'<br><div class="col-md-12 team-chart-div mt-4"><div class="col-md-12 p-0 d-flex justify-content-end team-chart-one style="width:'+skpc[a]+'"><span class="team-chart-span mt-3 ">'+skpc[a]+'</span></div> </div> </div> <br>';
+        $(".btn-edit-sumary").parents('.team-chart').before(skilladd);
+    });
+    let j = 9;
+    let height = ["200px","400px","200px","200px","200px","400px","200px","200px","200px","200px"];
+    let bg = ["#FD7038","#EECD10","#2F2FA1","#F64C71","#333333","#EF5B5B","#F9BC2D","#F64C71","#333333","#FD7038"];
+    for (i = 0; i < j; i++) {
+        let div_img = "<div style='height:"+height[i]+"; background-color:"+bg[i]+"' class=\"cv-center project-ni project-img-one\"><img src=\"images/project.jpg\"></div>";
+        let div_img_black = "<div style='height:"+height[i]+"; background-color:"+bg[i]+"' class=\"cv-center project-ni project-img-five\"><img src=\"images/project-black.jpg\" style='width: 220px;'></div>";
+        if(i%10 == 0){
+            $(".project-one").append(div_img);
+        }
+        if(i%10 == 1){
+            $(".project-two").append(div_img_black);
+        }
+        if(i%10 == 2){
+            $(".project-three").append(div_img);
+        }
+        if(i%10 == 3){
+            $(".project-for").append(div_img);
+        }
+        if(i%10 == 4){
+            $(".project-one").append(div_img);
+        }
+        if(i%10 == 5){
+            $(".project-three").append(div_img_black);
+        }
+        if(i%10 == 6){
+            $(".project-for").append(div_img);
+        }
+        if(i%10 == 7){
+            $(".project-one").append(div_img);
+        }
+        if(i%10 == 8){
+            $(".project-two").append(div_img);
+        }
+        if(i%10 == 9){
+            $(".project-for").append(div_img);
+        }
+    }
+
+    $(".btn-add-project").click(function() {
+        j++;
+        if(j == height.length){
+            height.push("200px","400px","200px","200px","200px","400px","200px","200px","200px","200px");
+            bg.push("#FD7038","#EECD10","#2F2FA1","#F64C71","#333333","#EF5B5B","#F9BC2D","#F64C71","#333333","#FD7038");
+        }
+
+        $(".project-one").empty();
+        $(".project-two").empty();
+        $(".project-three").empty();
+        $(".project-for").empty();
+
+        for (i = 0; i < j; i++) {
+            let div_img = "<div style='height:"+height[i]+";background-color:"+bg[i]+"' class=\"cv-center\"><img src=\"images/project.jpg\"></div>";
+            let div_img_black = "<div style='height:"+height[i]+";background-color:"+bg[i]+"' class=\"cv-center\"><img src=\"images/project-black.jpg\" style='width: 220px;'></div>";
+            if(i%10 == 0){
+                $(".project-one").append(div_img);
+            }
+            if(i%10 == 1){
+                $(".project-two").append(div_img_black);
+            }
+            if(i%10 == 2){
+                $(".project-three").append(div_img);
+            }
+            if(i%10 == 3){
+                $(".project-for").append(div_img);
+            }
+            if(i%10 == 4){
+                $(".project-one").append(div_img);
+            }
+            if(i%10 == 5){
+                $(".project-three").append(div_img_black);
+            }
+            if(i%10 == 6){
+                $(".project-for").append(div_img);
+            }
+            if(i%10 == 7){
+                $(".project-one").append(div_img);
+            }
+            if(i%10 == 8){
+                $(".project-two").append(div_img);
+            }
+            if(i%10 == 9){
+                $(".project-for").append(div_img);
+            }
+        }
+    });
+
+    let title = ["(2010 - 2019) ABC COMPANY", "(2010 - 2019) ABC COMPANY", "(2010 - 2019) ABC COMPANY"];
+    let develop = ["Developer", "Developer", "Developer"];
+    let textlor = ["Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy","Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy","Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy"];
+    for(t=0; t<title.length; t++){
+        let experice = '<div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3"><h4 class="m-0">'+title[t]+'</h4><p class="p-0 m-0">'+develop[t]+'</p><p class="p-0 m-0">'+textlor[t]+'</p></div>';
+        $(".box").append(experice);
+    }
+    $(".btn-add-experince").click(function() {
+        title.push("(2010 - 2020) ACEDAMY");
+        develop.push("Developer");
+        textlor.push("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy");
+        let experice = '<div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3"><h4>'+title[t]+'</h4><p class="p-0 m-1">'+develop[t]+'</p><p class="p-0 m-1">'+textlor[t]+'</p></div>';
+        $(".box").append(experice);  
+    });
+
+    let pt = ["75%"];
+    let skill = ["HTML/CSS"];
+    $(".btn-add-chart").click(function() {
+        let chart = '<div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info"><text class="circle-chart__percent" x="17.9" y="15.5"></text></g><span class="span-white-per-number" contenteditable="true">'+pt+'</span></svg><span class="span-white-per-text p-0 m-0" contenteditable="true">'+skill+'</span></div>';
+        $(".btn-chart").before(chart);
+    });
+    </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

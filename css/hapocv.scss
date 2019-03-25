@@ -58,8 +58,9 @@ h1 {
 	background-size: 50% 100%;
 
 	.header-left-text {
-		margin-bottom: 40px;
+		margin-bottom: 75px;
 		span {
+			font-size: 20px;
 			border-top: 2px solid #F64C71;
 		}
 
@@ -79,12 +80,12 @@ h1 {
 
 .icon-camera {
 	position: absolute;
-	right: -50px;
-	bottom: -50px;
+	right: -55px;
+	bottom: -55px;
 	margin: 0;
 	z-index: 99999;
-	width: 100px;
-	height: 100px;
+	width: 110px;
+	height: 110px;
 	color: rgba(255,255,255,0.75);
 	display: block; 
 	background: rgba(58,57,57, 0.8);
@@ -94,8 +95,8 @@ h1 {
 
 	i {
 		font-size: 14px;
-		color: #fff;
-		margin: 22px 0 0 22px;
+		color: rgba(255, 255, 255, 0.75);
+		margin: 25px 0 0 25px;
 	}
 }
 
@@ -155,6 +156,13 @@ h1 {
 	overflow: hidden;
 }
 
+.line {
+	width: 470px;
+	border: 1px solid #F64C71;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 .title p, h2 {
 	text-align: center;
 }
@@ -163,14 +171,13 @@ h1 {
 	margin-left: -45px;
 
 	table {
-		border-top: 2px solid #F64C71;
 		margin: 0 auto;
 		font-weight: 300;
 		font-size: 14px;
 		letter-spacing: 0.05em;
 
 		tr td {
-			padding-bottom: 10px;
+			padding-bottom: 15px;
 		}
 
 		tr td:first-child {
@@ -179,7 +186,7 @@ h1 {
 		}
 
 		tr:first-child td{
-			padding-top: 25px;
+			padding-top: 10px;
 		}
 	}
 }
@@ -213,13 +220,19 @@ h1 {
 	margin-bottom: 45px;
 }
 
-.btn-edit-sumary {
-	margin-right: 35px;
+.btn-edi-sumary {
+	@include bottom;
 	width: 151px;
+	margin-right: 32px;
+}
+
+.btn-edit-sumary {
+	width: 108px;
 	@include bottom;
 }
 
 .btn-add-chart {
+	height: 40px !important;
 	margin-top: 15px;
 	padding: 10px 20px;
 	@include bottom;
@@ -262,7 +275,7 @@ h1 {
 
 	.circle-chart__background {
 		stroke: #ffffff;
-		stroke-width: 2;
+		stroke-width: 1.5;
 		fill: none;
 	}
 
@@ -272,7 +285,7 @@ h1 {
 
 	.circle-chart__circle {
 		stroke: #F64C71;
-		stroke-width: 2;
+		stroke-width: 1.5;
 		stroke-linecap: square;
 		fill: none;
 		animation: circle-chart-fill 2s reverse;
@@ -303,6 +316,11 @@ h1 {
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+.team-chart {
+	margin-left: 30px !important;
+	margin-right: 30px !important;
 }
 
 .team-chart-div {
@@ -340,12 +358,13 @@ span {
 	&:before {
 		content: "";
 		position: absolute;
-		border-left: 1px solid #ffffff;
+		border-left: 1px solid #ffffff !important;
 		width: 0;
 		height: 100%;
 		top: 0;
 		left: -65px;
 	}
+
 	&:after {
 		content: "";
 		position: absolute;
@@ -396,7 +415,14 @@ span {
 	@include box;
 	background: #563D67;
 
+	.menu-portfolio {
+		ul {
+			margin-left: -15px;
+		}
+	}
+
 	ul li a {
+		font-weight: 700;
 		color: #ffffff;
 		padding-right: 20px;
 	}
@@ -567,15 +593,17 @@ h1 {
 /*end add fonts*/
 
 h4 {
+	font-size: 14px;
 	position: relative;
+	line-height: 1.8;
 	display: inline-block;
 
 	&:before {
 		content: "";
-		width: 140px;
+		width: 85px;
 		height: 0;
 		bottom: 0;
-		left: 5px;
+		left: 3px;
 		border-bottom: 2px solid #ffffff;
 		position: absolute;
 	}
