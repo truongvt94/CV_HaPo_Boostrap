@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.05em;
@@ -30,8 +30,7 @@ h1 {
   .header-top .header-left-text {
     margin-bottom: 75px; }
     .header-top .header-left-text span {
-      font-size: 20px;
-      border-top: 2px solid #F64C71; }
+      font-size: 20px; }
     .header-top .header-left-text h2 {
       font-size: 40px; }
     .header-top .header-left-text p {
@@ -180,9 +179,7 @@ h1 {
   height: 36px; }
 
 .btn-add-chart {
-  height: 40px !important;
-  margin-top: 15px;
-  padding: 10px 20px;
+  width: 108px;
   border: 1px solid #F64C71;
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
@@ -255,8 +252,56 @@ h1 {
   right: 0; }
 
 .team-chart {
+  position: relative;
   margin-left: 30px !important;
   margin-right: 30px !important; }
+  .team-chart:hover .btn-delete {
+    display: block; }
+  .team-chart .btn-delete {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: #fff;
+    border: none;
+    background: none; }
+
+.chart-mazu {
+  position: relative; }
+  .chart-mazu:hover .btn-skill-left {
+    display: block; }
+  .chart-mazu .btn-skill-left {
+    z-index: 9999999999999;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none; }
+
+.btn-experince {
+  top: 0px;
+  right: 0;
+  color: #fff;
+  border: none;
+  background: none; }
+
+.btn-projectt {
+  position: absolute;
+  top: 5px;
+  right: 5px; }
+
+#btn-delete-skill-left {
+  top: 0px;
+  right: 0;
+  color: #fff;
+  border: none;
+  background: none; }
+
+#btn-delete-project {
+  top: 0px;
+  right: 0;
+  color: #fff;
+  border: none;
+  background: none; }
 
 .team-chart-div {
   background: #ffffff;
@@ -279,19 +324,22 @@ span {
   padding-bottom: 45px;
   background: #F64C71; }
 
-.box {
+.box,
+.box-edu {
   position: relative;
   display: block;
   margin-left: 100px; }
-  .box:before {
+  .box:before,
+  .box-edu:before {
     content: "";
     position: absolute;
-    border-left: 1px solid #ffffff;
-    width: 2px;
+    border-left: 1px solid #ffffff !important;
+    width: 3px;
     height: 100%;
     top: 0;
     left: -65px; }
-  .box:after {
+  .box:after,
+  .box-edu:after {
     content: "";
     position: absolute;
     border-top: 1px solid #ffffff;
@@ -306,7 +354,7 @@ span {
     content: "";
     width: 50px;
     position: absolute;
-    height: 2px;
+    height: 3px;
     left: -51px;
     border-top: 1px dotted #ffffff;
     top: 75px; }
@@ -326,8 +374,20 @@ span {
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
   cursor: pointer;
-  width: 135px;
+  font-size: 14px;
   height: 36px; }
+
+.btn-add-experince-right {
+  border: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px; }
+
+.btn-experince,
+.btn-experince-two {
+  margin-right: 30px; }
 
 .portfolio {
   padding-top: 45px;
@@ -390,11 +450,20 @@ span {
       left: -25px;
       top: -25px; }
     .slide .slide-text .slide-sapn-two {
-      top: 95px; }
+      top: 98px; }
   .slide .slide img {
     width: 150px;
     height: 150px;
     border-radius: 50%; }
+
+.btn-refer {
+  display: flex;
+  justify-content: flex-end; }
+
+#btn-delete-refer {
+  background: none;
+  border: none;
+  color: #ffffff; }
 
 .owl-carousel .owl-item img {
   width: 150px;
@@ -408,7 +477,8 @@ span {
   position: absolute;
   width: 100%; }
 .owl-carousel .owl-nav span {
-  font-size: 35px; }
+  font-family: 'Font Awesome 5 Free';
+  font-size: 14px; }
 .owl-carousel .owl-prev {
   position: absolute;
   left: 70px;
@@ -477,22 +547,121 @@ h1, h2 {
 h2 {
   font-size: 40px;
   padding-left: 7px; }
+  h2:after {
+    content: "";
+    width: 55%;
+    border-bottom: 2px solid #F64C71;
+    position: relative;
+    display: block; }
 
-h1:before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-bottom: 2px solid #F64C71;
-  margin-top: -5px;
-  width: 75px;
-  right: 0px; }
-h1:after {
-  content: "";
-  width: 130px;
-  border-top: 2px solid #F64C71;
-  position: absolute;
-  display: block;
-  float: right; }
+.sumary {
+  position: relative; }
+  .sumary:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #F64C71;
+    margin-top: -5px;
+    width: 20%;
+    right: 0px; }
+  .sumary:after {
+    content: "";
+    width: 56%;
+    border-top: 2px solid #F64C71;
+    position: absolute;
+    display: block;
+    float: right; }
+
+.skill-hidari {
+  position: relative; }
+  .skill-hidari:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #F64C71;
+    margin-top: -5px;
+    width: 15%;
+    right: 0px; }
+  .skill-hidari:after {
+    content: "";
+    width: 65%;
+    border-top: 2px solid #F64C71;
+    position: absolute;
+    display: block;
+    float: right; }
+
+.skill-migi {
+  position: relative; }
+  .skill-migi:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #F64C71;
+    margin-top: -5px;
+    width: 18%;
+    right: 0px; }
+  .skill-migi:after {
+    content: "";
+    width: 58%;
+    border-top: 2px solid #F64C71;
+    position: absolute;
+    display: block;
+    float: right; }
+
+.portfolio-folder {
+  position: relative; }
+  .portfolio-folder:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #F64C71;
+    margin-top: -5px;
+    width: 18%;
+    right: 0px; }
+  .portfolio-folder:after {
+    content: "";
+    width: 58%;
+    border-top: 2px solid #F64C71;
+    position: absolute;
+    display: block;
+    float: right; }
+
+.refer {
+  position: relative; }
+  .refer:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #F64C71;
+    margin-top: -5px;
+    width: 18%;
+    right: 0px; }
+  .refer:after {
+    content: "";
+    width: 58%;
+    border-top: 2px solid #F64C71;
+    position: absolute;
+    display: block;
+    float: right; }
+
+h1 {
+  display: inline-block;
+  position: relative; }
+  h1:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #F64C71;
+    margin-top: -5px;
+    width: 18%;
+    right: 0px; }
+  h1:after {
+    content: "";
+    width: 32%;
+    border-top: 2px solid #F64C71;
+    position: absolute;
+    display: block;
+    float: right; }
 
 .white-line {
   position: relative;

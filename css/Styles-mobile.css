@@ -19,8 +19,22 @@
 		color: #FFFFFF;
 	}
 
+	h1:after {
+		width: 75px;
+	}
+
 	h4:before {
 		width: 105px;
+	}
+
+	.icon-camera {
+		width: 95px;
+		height: 95px;
+	}
+
+	.icon-camera i {
+		margin: 20px 0 0 20px;
+		font-size: 10px;
 	}
 
 	.item-one {
@@ -40,8 +54,21 @@
 		left: -32px;
 	}
 
+	.camera-i {
+		font-family: 'Font Awesome 5 Free';
+		font-size: 10px;
+	}
+
 	.header-left {
 		height: 175px;
+	}
+
+	.header-left-text {
+		margin-bottom: 5px !important;
+	}
+
+	.header-top .header-left-text span {
+		font-size: 14px;
 	}
 
 	.header-left-text h2 {
@@ -129,8 +156,16 @@
 		padding-bottom: 40px;
 	}
 
+	.btn-experince-two {
+		margin-right: 0;
+	}
+
 	.btn-experince  {
-		padding-bottom: 40px;
+		margin-right: 0;
+	}
+
+	.educati {
+		padding-top: 45px;
 	}
 
 	.span-white-per-text {
@@ -140,8 +175,13 @@
 		right: 0;
 	}
 
+	.box-edu {
+		width: 84%;
+		left: -25px;
+	}
+
 	.box {
-		width: 83%;
+		width: 84%;
 		left: -25px;
 	}
 
@@ -203,7 +243,7 @@
 	}
 
 	.owl-theme .owl-nav {
-		top: 5%;
+		top: 10%;
 	}
 }
 

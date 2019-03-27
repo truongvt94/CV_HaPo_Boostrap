@@ -36,7 +36,7 @@
                     </div>
                     <label class="icon-camera">
                         <input type="file" name="file" class="d-none" />
-                        <i class="fas fa-camera"></i>
+                        <i class="camera-i fas fa-camera"></i>
                     </label>
                 </div>
                 <div class="header-right col-12 col-sm-12 col-md-5 offset-md-1">
@@ -49,7 +49,7 @@
                         <div class="avatar-mini">
                             <img class="mx-auto" src="images/Rectangle.png" alt="">
                             <a class="mx-auto icon-avatar position-absolute" class="avatar-camera-right" href="#" title="avarta">
-                                <i class="fas fa-camera"></i>
+                                <i class="camera-i fas fa-camera"></i>
                             </a>
                         </div>
                     </div>
@@ -89,19 +89,19 @@
                         </table>
                     </div>
                     <div class="btn-profile text-center">
-                     <button class="btn-edit-profile" type="submit"><a href="#">Edit Profile <i class="fas fa-pen"></i></a>
-                     </button>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
+                       <button class="btn-edit-profile" type="submit"><a href="#">Edit Profile <i class="fas fa-pen"></i></a>
+                       </button>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 
- <div class="container-fluid profestinal-sumary">
+   <div class="container-fluid profestinal-sumary">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 contenteditable="true">PROFESSIONAL SUMMARY</h1>
+                <h1 class="sumary">PROFESSIONAL SUMMARY</h1>
                 <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -131,14 +131,21 @@
     <div class="container">
         <div class="row">
             <div class="skills-left col-12 col-sm-12 col-md-6">
-                <h1 contenteditable="true">PROFESSIONAL SKILLS</h1>
+                <h1 class="skill-hidari">PROFESSIONAL SKILLS</h1>
                 <p contenteditable="true">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip
                 </p>
+
                 <div class="row chart-icon">
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
+                    <div class="chart-mazu col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
+                        <div class="btn-skill-left"> 
+                            <button id="btn-delete-skill-left">
+                                <i onclick='myskillleft(this)' class="far fa-trash-alt d-flex justify-content-end">
+                                </i>
+                            </button>
+                        </div>
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -150,32 +157,14 @@
                         </svg>
                         <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
-                        <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
-                            <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
-                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="65,100" cx="16.9" cy="16.9" r="15.9">
-                            </circle>
-                            <g class="circle-chart__info">
-                                <text class="circle-chart__percent" x="17.9" y="15.5"></text>
-                            </g>
-                            <span class="span-white-per-number" contenteditable="true">65%</span>
-                        </svg>
-                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
-                        <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
-                            <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
-                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="50,100" cx="16.9" cy="16.9" r="15.9">
-                            </circle>
-                            <g class="circle-chart__info">
-                                <text class="circle-chart__percent" x="17.9" y="15.5"></text>
-                            </g>
-                            <span class="span-white-per-number" contenteditable="true">50%</span>
-                        </svg>
-                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
-                    </div>
-                    
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 position-relative" style="" data-percentage="50">
+
+                     <div class="chart-mazu col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
+                        <div class="btn-skill-left"> 
+                            <button id="btn-delete-skill-left">
+                                <i onclick='myskillleft(this)' class="far fa-trash-alt d-flex justify-content-end">
+                                </i>
+                            </button>
+                        </div>
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
                             <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
@@ -183,43 +172,113 @@
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number" contenteditable="true">75%</span>
+                            <span class="span-white-per-number" contenteditable="true">75%</span><br>
                         </svg>
                         <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 position-relative" style="" data-percentage="50">
+                     <div class="chart-mazu col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
+                        <div class="btn-skill-left"> 
+                            <button id="btn-delete-skill-left">
+                                <i onclick='myskillleft(this)' class="far fa-trash-alt d-flex justify-content-end">
+                                </i>
+                            </button>
+                        </div>
                         <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
                             <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
-                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="65,100" cx="16.9" cy="16.9" r="15.9">
+                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
                             </circle>
                             <g class="circle-chart__info">
                                 <text class="circle-chart__percent" x="17.9" y="15.5"></text>
                             </g>
-                            <span class="span-white-per-number" contenteditable="true">65%</span>
+                            <span class="span-white-per-number" contenteditable="true">75%</span><br>
                         </svg>
                         <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
                     </div>
+                     <div class="chart-mazu col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
+                        <div class="btn-skill-left"> 
+                            <button id="btn-delete-skill-left">
+                                <i onclick='myskillleft(this)' class="far fa-trash-alt d-flex justify-content-end">
+                                </i>
+                            </button>
+                        </div>
+                        <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
+                            <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
+                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
+                            </circle>
+                            <g class="circle-chart__info">
+                                <text class="circle-chart__percent" x="17.9" y="15.5"></text>
+                            </g>
+                            <span class="span-white-per-number" contenteditable="true">75%</span><br>
+                        </svg>
+                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
+                    </div>
+
+                    <div class="chart-mazu col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50">
+                        <div class="btn-skill-left"> 
+                            <button id="btn-delete-skill-left">
+                                <i onclick='myskillleft(this)' class="far fa-trash-alt d-flex justify-content-end">
+                                </i>
+                            </button>
+                        </div>
+                        <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862">
+                            <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
+                            <circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9">
+                            </circle>
+                            <g class="circle-chart__info">
+                                <text class="circle-chart__percent" x="17.9" y="15.5"></text>
+                            </g>
+                            <span class="span-white-per-number" contenteditable="true">75%</span><br>
+                        </svg>
+                        <span class="span-white-per-text p-0 m-0" contenteditable="true">HTML/CSS</span>
+                    </div>
+
                     <div class="col-6 col-sm-4 col-md-6 col-lg-4 btn-chart" style="">
-                    <button class="btn-add-chart">Add Skills <i class="fas fa-plus"></i></button>
-                </div>
+                        <button class="btn-add-chart">Add Skills <i class="fas fa-plus"></i></button>
+                    </div>
                 </div>
                 
             </div>
             <div class="skills-right col-12 col-sm-12 col-md-6">
-                <h1 class="pt-5 pt-md-0 pt-lg-0" contenteditable="true">PERSONAL SKILLS</h1>
+                <h1 class="skill-migi pt-5 pt-md-0 pt-lg-0">PERSONAL SKILLS</h1>
                 <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip
                 </p>
-                <!-- <div class="team-chart mx-1 mr-md-4 ml-md-4 row" contenteditable="true">
-                    TEAM WORD
+                <!-- <div id="team-delete" class="team-chart mx-1 mr-md-4 ml-md-4 row">
+                    TEAM WORD <br>
                     <div class="col-md-12 team-chart-div mt-4">
                         <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
                             <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
                         </div>
                     </div>
-                </div>
-                <div class="team-chart mx-1 mt-3 mr-md-4 ml-md-4 row" contenteditable="true">
+                    <button class="btn-delete">
+                        <i onclick='myfunction()' class="far fa-trash-alt d-flex justify-content-end"></i>
+                    </button>
+                </div><br>
+                <div id="team-delete" class="team-chart mx-1 mr-md-4 ml-md-4 row">
+                    TEAM WORD <br>
+                    <div class="col-md-12 team-chart-div mt-4">
+                        <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
+                            <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
+                        </div>
+                    </div>
+                    <button class="btn-delete">
+                        <i onclick='myfunction()' class="far fa-trash-alt d-flex justify-content-end"></i>
+                    </button>
+                </div><br>
+                <div id="team-delete" class="team-chart mx-1 mr-md-4 ml-md-4 row">
+                    TEAM WORD <br>
+                    <div class="col-md-12 team-chart-div mt-4">
+                        <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
+                            <span class="team-chart-span mt-3 " contenteditable="true">60%</span>
+                        </div>
+                    </div>
+                    <button class="btn-delete">
+                        <i onclick='myfunction()' class="far fa-trash-alt d-flex justify-content-end"></i>
+                    </button>
+                </div><br> -->
+                
+                <!-- <div class="team-chart mx-1 mt-3 mr-md-4 ml-md-4 row" contenteditable="true">
                     TEAM WORD
                     <div class="col-md-12 team-chart-div mt-4">
                         <div class="col-md-12 p-0 d-flex justify-content-end team-chart-one">
@@ -254,12 +313,14 @@
     <div class="container work-experience-margin">
         <div class="left row">
             <div class="col-md-6 full-item">
-                <h1 class="white-line" contenteditable="true" >WORK EXPERIENCE</h1>
+                <h1 class="white-line">WORK EXPERIENCE</h1>
                 <p contenteditable="true">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 <div class="box">
                     <!-- <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                         <h4>(2010 - 2019) ABC COMPANY</h4>
-                        <p class="p-0 m-1">Developer</p>
+                        <button class="btn-delete">
+                        <i onclick='myfunction()' class="far fa-trash-alt d-flex justify-content-end"></i>
+                    </button><p class="p-0 m-1">Developer</p>
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div>
                     <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
@@ -278,17 +339,17 @@
                         <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div> -->
                 </div>
-                <div class="btn-experince text-md-right text-center mr-md-4">
-                   <button class="btn-add-experince" type="submit">
-                       Add Experince <i class="fas fa-plus"></i>
-                   </button>
-               </div>
-           </div>
-           <div class="col-md-6">
-            <h1 class="white-line" contenteditable="true">WORK EDUCATION</h1>
+                <div class="btn-experince text-md-right text-center">
+                 <button class="btn-add-experince" type="submit">
+                     Add work experience <i class="fas fa-plus"></i>
+                 </button>
+             </div>
+         </div>
+         <div class="col-md-6 educati">
+            <h1 class="white-line">WORK EDUCATION</h1>
             <p contenteditable="true">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-            <div class="box">
-                <!-- <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
+            <div class="box-edu">
+<!--                 <div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3">
                     <h4>(2010 - 2019) ABC COMPANY</h4>
                     <p class="p-0 m-1">Developer</p>
                     <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
@@ -304,19 +365,19 @@
                     <p class="p-0 m-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                 </div> -->
             </div>
-            <div class="btn-experince-two text-md-right text-center mr-md-4">
-               <button class="btn-add-experince mt-0" type="submit">
-                   Add Experince <i class="fas fa-plus"></i>
-               </button>
-           </div>
-       </div>
-   </div>
+            <div class="btn-experince-two text-md-right text-center">
+             <button class="btn-add-experince-right mt-0" type="submit">
+                 Add Education <i class="fas fa-plus"></i>
+             </button>
+         </div>
+     </div>
+ </div>
 </div>
 </div>
 
 <div class="container-fluid portfolio">
     <div class="container">
-        <h1 contenteditable="true">WORD PORTFOLIO</h1>
+        <h1 class="portfolio-folder">PORTFOLIO</h1>
         <div class="menu-portfolio mt-4 col-md-12">
             <ul>
                 <li><a href="#">ALL</a></li>
@@ -328,21 +389,20 @@
         </div>
 
         <div class="d-none d-flex w-100 flex-wrap portfolio-pc">
-            <div class="w-25 project-one">
-                
-            </div>
+            <div class="w-25 project-one position-relative">
 
+            </div>
             <div class="w-25 project-two">
-                
+
             </div>
 
             <div class="w-25 project-three">
-                
+
             </div>
 
             <div class="w-25">
                 <div class="project-for">
-                    
+
                 </div>
                 <div class="btn-project project-ni w-100 cv-center">
                     <button class="btn-add-project" class="cv-btn align-middle">Add Project
@@ -399,7 +459,7 @@
 <!-- -->
 <div class="container-fluid references">
     <div class="container">
-        <h1 class="mb-5" contenteditable="true">REFERENCES RENCES</h1>
+        <h1 class="refer mb-5">REFERENCES RENCES</h1>
         <div id="truong" class="owl-carousel owl-theme">
             <div class="slide item row">
                 <div class="slide-img col-md-3 d-flex justify-content-center">
@@ -434,7 +494,7 @@
                     <img class="" src="images/avatar-ref.jpg" alt="">
                 </div>
                 <div class="slide-text col-12 col-sm-12 col-md-9 col-lg-9 position-relative ">
-                    <p><span class="slide-sapn slide-sapn-one position-absolute">“</span>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <p><span class="slide-sapn slide-sapn-one position-absolute">“</span>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -442,8 +502,14 @@
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="slide-sapn slide-sapn-two position-absolute">”</span>
                     </p>
                 </div>
-            </div> 
+            </div>
         </div>
+        <div class="btn-refer"> 
+                            <button id="btn-delete-refer">
+                                <i onclick='myrefer(this)' class="far fa-trash-alt d-flex justify-content-end">
+                                </i>
+                            </button>
+                        </div>
         <div class="col-md-12 btn-references text-center" style="">
             <button class="btn-add-references">Add References 
                 <i class="fas fa-plus"></i>
@@ -470,129 +536,7 @@
         }
     });
 </script>
-
-<script type="text/javascript">
-    var skpc = ["65%","65%","65%"];
-    var skn = ["TEAMWORK","ENGLISH","JAPANESE"];
-    for(a = 0;a < skpc.length ;a++) {
-        let skilladd = '<div class="team-chart mx-1 mr-md-4 ml-md-4 row">'+skn[a]+'<br><div class="col-md-12 team-chart-div mt-4"><div class="col-md-12 p-0 d-flex justify-content-end team-chart-one style="width:'+skpc[a]+'"><span class="team-chart-span mt-3 ">'+skpc[a]+'</span></div> </div> </div><br>';
-        $(".btn-edit-sumary").parents('.team-chart').before(skilladd);
-    }
-
-    $(".btn-edit-sumary").click(function() {
-        skpc.push("65%");
-        skn.push("PERSONAL SKILL NAME");
-        var skilladd = '<div class="team-chart mx-1 mr-md-4 ml-md-4 row">'+skn[a]+'<br><div class="col-md-12 team-chart-div mt-4"><div class="col-md-12 p-0 d-flex justify-content-end team-chart-one style="width:'+skpc[a]+'"><span class="team-chart-span mt-3 ">'+skpc[a]+'</span></div> </div> </div> <br>';
-        $(".btn-edit-sumary").parents('.team-chart').before(skilladd);
-    });
-    let j = 9;
-    let height = ["200px","400px","200px","200px","200px","400px","200px","200px","200px","200px"];
-    let bg = ["#FD7038","#EECD10","#2F2FA1","#F64C71","#333333","#EF5B5B","#F9BC2D","#F64C71","#333333","#FD7038"];
-    for (i = 0; i < j; i++) {
-        let div_img = "<div style='height:"+height[i]+"; background-color:"+bg[i]+"' class=\"cv-center project-ni project-img-one\"><img src=\"images/project.jpg\"></div>";
-        let div_img_black = "<div style='height:"+height[i]+"; background-color:"+bg[i]+"' class=\"cv-center project-ni project-img-five\"><img src=\"images/project-black.jpg\" style='width: 220px;'></div>";
-        if(i%10 == 0){
-            $(".project-one").append(div_img);
-        }
-        if(i%10 == 1){
-            $(".project-two").append(div_img_black);
-        }
-        if(i%10 == 2){
-            $(".project-three").append(div_img);
-        }
-        if(i%10 == 3){
-            $(".project-for").append(div_img);
-        }
-        if(i%10 == 4){
-            $(".project-one").append(div_img);
-        }
-        if(i%10 == 5){
-            $(".project-three").append(div_img_black);
-        }
-        if(i%10 == 6){
-            $(".project-for").append(div_img);
-        }
-        if(i%10 == 7){
-            $(".project-one").append(div_img);
-        }
-        if(i%10 == 8){
-            $(".project-two").append(div_img);
-        }
-        if(i%10 == 9){
-            $(".project-for").append(div_img);
-        }
-    }
-
-    $(".btn-add-project").click(function() {
-        j++;
-        if(j == height.length){
-            height.push("200px","400px","200px","200px","200px","400px","200px","200px","200px","200px");
-            bg.push("#FD7038","#EECD10","#2F2FA1","#F64C71","#333333","#EF5B5B","#F9BC2D","#F64C71","#333333","#FD7038");
-        }
-
-        $(".project-one").empty();
-        $(".project-two").empty();
-        $(".project-three").empty();
-        $(".project-for").empty();
-
-        for (i = 0; i < j; i++) {
-            let div_img = "<div style='height:"+height[i]+";background-color:"+bg[i]+"' class=\"cv-center\"><img src=\"images/project.jpg\"></div>";
-            let div_img_black = "<div style='height:"+height[i]+";background-color:"+bg[i]+"' class=\"cv-center\"><img src=\"images/project-black.jpg\" style='width: 220px;'></div>";
-            if(i%10 == 0){
-                $(".project-one").append(div_img);
-            }
-            if(i%10 == 1){
-                $(".project-two").append(div_img_black);
-            }
-            if(i%10 == 2){
-                $(".project-three").append(div_img);
-            }
-            if(i%10 == 3){
-                $(".project-for").append(div_img);
-            }
-            if(i%10 == 4){
-                $(".project-one").append(div_img);
-            }
-            if(i%10 == 5){
-                $(".project-three").append(div_img_black);
-            }
-            if(i%10 == 6){
-                $(".project-for").append(div_img);
-            }
-            if(i%10 == 7){
-                $(".project-one").append(div_img);
-            }
-            if(i%10 == 8){
-                $(".project-two").append(div_img);
-            }
-            if(i%10 == 9){
-                $(".project-for").append(div_img);
-            }
-        }
-    });
-
-    let title = ["(2010 - 2019) ABC COMPANY", "(2010 - 2019) ABC COMPANY", "(2010 - 2019) ABC COMPANY"];
-    let develop = ["Developer", "Developer", "Developer"];
-    let textlor = ["Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy","Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy","Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy"];
-    for(t=0; t<title.length; t++){
-        let experice = '<div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3"><h4 class="m-0">'+title[t]+'</h4><p class="p-0 m-0">'+develop[t]+'</p><p class="p-0 m-0">'+textlor[t]+'</p></div>';
-        $(".box").append(experice);
-    }
-    $(".btn-add-experince").click(function() {
-        title.push("(2010 - 2020) ACEDAMY");
-        develop.push("Developer");
-        textlor.push("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy");
-        let experice = '<div contenteditable="true" class="item-one p-2 border mb-4 border-white mr-0 mr-md-3 mr-lg-3"><h4>'+title[t]+'</h4><p class="p-0 m-1">'+develop[t]+'</p><p class="p-0 m-1">'+textlor[t]+'</p></div>';
-        $(".box").append(experice);  
-    });
-
-    let pt = ["75%"];
-    let skill = ["HTML/CSS"];
-    $(".btn-add-chart").click(function() {
-        let chart = '<div class="col-6 col-sm-4 col-md-6 col-lg-4" style="" data-percentage="50"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info"><text class="circle-chart__percent" x="17.9" y="15.5"></text></g><span class="span-white-per-number" contenteditable="true">'+pt+'</span></svg><span class="span-white-per-text p-0 m-0" contenteditable="true">'+skill+'</span></div>';
-        $(".btn-chart").before(chart);
-    });
-    </script>
+<script src="js/scrips.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

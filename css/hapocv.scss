@@ -14,13 +14,12 @@
 body {
 	box-sizing: border-box;
 	margin: 0 auto;
-	padding: 0px;
+	padding: 0;
 	font-size: 14px;
 	font-family: 'Poppins', 
 	sans-serif;
 	letter-spacing: 0.05em;
 	color: #ffffff;
-	
 }
 
 ul li {
@@ -61,7 +60,6 @@ h1 {
 		margin-bottom: 75px;
 		span {
 			font-size: 20px;
-			border-top: 2px solid #F64C71;
 		}
 
 		h2 {
@@ -232,9 +230,7 @@ h1 {
 }
 
 .btn-add-chart {
-	height: 40px !important;
-	margin-top: 15px;
-	padding: 10px 20px;
+	width: 108px;
 	@include bottom;
 }
 
@@ -319,8 +315,68 @@ h1 {
 }
 
 .team-chart {
+	position: relative;
 	margin-left: 30px !important;
 	margin-right: 30px !important;
+
+	&:hover .btn-delete {
+		display: block;
+	}
+
+	.btn-delete {
+		display: none;
+		position: absolute;
+		top: 15px;
+		right: 0;
+		color: #fff;
+		border: none;
+		background: none;
+	}
+}
+
+.chart-mazu {
+	position: relative;
+	&:hover .btn-skill-left {
+		display: block;
+	}
+
+	.btn-skill-left {
+		z-index: 9999999999999;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		display: none;
+	}
+}
+
+.btn-experince {
+	top: 0px;
+	right: 0;
+	color: #fff;
+	border: none;
+	background: none;
+}
+
+.btn-projectt {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#btn-delete-skill-left {
+	top: 0px;
+	right: 0;
+	color: #fff;
+	border: none;
+	background: none;
+}
+
+#btn-delete-project {
+	top: 0px;
+	right: 0;
+	color: #fff;
+	border: none;
+	background: none;
 }
 
 .team-chart-div {
@@ -350,7 +406,8 @@ span {
 	background: #F64C71;
 }
 
-.box {
+.box,
+.box-edu {
 	position: relative;
 	display: block;
 	margin-left: 100px;
@@ -359,7 +416,7 @@ span {
 		content: "";
 		position: absolute;
 		border-left: 1px solid #ffffff !important;
-		width: 0;
+		width: 3px;
 		height: 100%;
 		top: 0;
 		left: -65px;
@@ -383,7 +440,7 @@ span {
 		content: "";
 		width: 50px;
 		position: absolute;
-		height: 0;
+		height: 3px;
 		left: -51px;
 		border-top: 1px dotted #ffffff;
 		top: 75px;
@@ -407,8 +464,22 @@ span {
 	background-color: rgba(0,0,0,0);
 	color: #ffffff;
 	cursor: pointer;
-	width: 135px;
+	font-size: 14px;
 	height: 36px;
+}
+
+.btn-add-experince-right {
+	border: 1px solid #ffffff;
+	background-color: rgba(0,0,0,0);
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 14px;
+	height: 36px;
+}
+
+.btn-experince,
+.btn-experince-two {
+	margin-right: 30px;
 }
 
 .portfolio {
@@ -503,7 +574,7 @@ span {
 		}
 
 		.slide-sapn-two {
-			top: 95px;
+			top: 98px;
 		}
 	}
 
@@ -512,6 +583,17 @@ span {
 		height: 150px;
 		border-radius: 50%;
 	}
+}
+
+.btn-refer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#btn-delete-refer {
+	background: none;
+	border: none;
+	color: #ffffff;
 }
 
 .owl-carousel {
@@ -532,7 +614,8 @@ span {
 	}
 
 	.owl-nav span{
-		font-size: 35px;
+		font-family: 'Font Awesome 5 Free';
+		font-size: 14px;
 	}
 
 	.owl-prev {
@@ -591,7 +674,6 @@ h1 {
 	src:url(../fonts/PortLligatSans-Regular.ttf);
 }
 /*end add fonts*/
-
 h4 {
 	font-size: 14px;
 	position: relative;
@@ -624,22 +706,142 @@ h1, h2 {
 h2 {
 	font-size: 40px;
 	padding-left: 7px;
+
+	&:after {
+		content: "";
+		width: 55%;
+		border-bottom: 2px solid #F64C71;
+		position: relative;
+		display: block;
+	}
 }
 
-h1 {
+.sumary {
+	position: relative;
 	&:before {
 		content: "";
 		position: absolute;
 		display: block;
 		border-bottom: 2px solid #F64C71;
 		margin-top: -5px;
-		width: 75px;
+		width: 20%;
 		right: 0px;
 	}
 
 	&:after {
 		content: "";
-		width: 130px;
+		width: 56%;
+		border-top: 2px solid #F64C71;
+		position: absolute;
+		display: block;
+		float: right;
+	}
+}
+
+.skill-hidari {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		border-bottom: 2px solid #F64C71;
+		margin-top: -5px;
+		width: 15%;
+		right: 0px;
+	}
+
+	&:after {
+		content: "";
+		width: 65%;
+		border-top: 2px solid #F64C71;
+		position: absolute;
+		display: block;
+		float: right;
+	}
+}
+
+.skill-migi {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		border-bottom: 2px solid #F64C71;
+		margin-top: -5px;
+		width: 18%;
+		right: 0px;
+	}
+
+	&:after {
+		content: "";
+		width: 58%;
+		border-top: 2px solid #F64C71;
+		position: absolute;
+		display: block;
+		float: right;
+	}
+}
+
+.portfolio-folder {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		border-bottom: 2px solid #F64C71;
+		margin-top: -5px;
+		width: 18%;
+		right: 0px;
+	}
+
+	&:after {
+		content: "";
+		width: 58%;
+		border-top: 2px solid #F64C71;
+		position: absolute;
+		display: block;
+		float: right;
+	}
+}
+
+.refer {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		border-bottom: 2px solid #F64C71;
+		margin-top: -5px;
+		width: 18%;
+		right: 0px;
+	}
+
+	&:after {
+		content: "";
+		width: 58%;
+		border-top: 2px solid #F64C71;
+		position: absolute;
+		display: block;
+		float: right;
+	}
+}
+
+h1 {
+	display: inline-block;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		border-bottom: 2px solid #F64C71;
+		margin-top: -5px;
+		width: 18%;
+		right: 0px;
+	}
+
+	&:after {
+		content: "";
+		width: 32%;
 		border-top: 2px solid #F64C71;
 		position: absolute;
 		display: block;
